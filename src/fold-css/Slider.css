@@ -1,0 +1,37 @@
+
+
+.slider{
+    width: 100%;
+    padding: 120px 20px;
+    overflow: hidden;
+}
+
+.slider ul{
+    display: flex;
+    gap: 20px;
+    width: 200%;
+    animation: slider__bottom 7s infinite linear alternate;
+}
+
+@keyframes slider__bottom {
+    100%{
+        margin-left: -90%;
+    }
+}
+
+.slider ul:hover{
+    animation-play-state: paused;
+}
+
+@media screen and (max-width: 1200px){
+    .slider{
+        width: 250%;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .slider{
+        width: 350%;
+    }
+}
+

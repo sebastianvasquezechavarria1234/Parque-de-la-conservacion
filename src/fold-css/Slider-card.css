@@ -1,0 +1,78 @@
+
+.slider__card{
+    cursor: pointer;
+    position: relative;
+    width: 400px;
+    height: 600px;
+    background-image: radial-gradient(rgba(0, 0, 0, 0.071), rgba(0, 0, 0, 0.737)), url(../img/mariposa.jpg);
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    transition: all .3s;
+}
+
+.slider__card:nth-child(2){
+    background-image: radial-gradient(rgba(0, 0, 0, 0.071), rgba(0, 0, 0, 0.737)), url(../img/danta.jpg);
+}
+
+.slider__card:nth-child(3){
+    background-image: radial-gradient(rgba(0, 0, 0, 0.071), rgba(0, 0, 0, 0.737)), url(../img/mono-viejo.jpg);
+}
+
+.slider__card:nth-child(4){
+    background-image: radial-gradient(rgba(0, 0, 0, 0.071), rgba(0, 0, 0, 0.737)), url(../img/person.jpg);
+}
+
+.slider__card:nth-child(5){
+    background-image: radial-gradient(rgba(0, 0, 0, 0.071), rgba(0, 0, 0, 0.737)), url(../img/jaguar.jpg);
+}
+
+.slider__card:nth-child(6){
+    background-image: radial-gradient(rgba(0, 0, 0, 0.071), rgba(0, 0, 0, 0.737)), url(../img/flamencos.jpg);
+}
+
+.slider__card:nth-child(7){
+    background-image: radial-gradient(rgba(0, 0, 0, 0.071), rgba(0, 0, 0, 0.737)), url(../img/tortuga.jpg);
+}
+
+.slider__card:nth-child(8){
+    background-image: radial-gradient(rgba(0, 0, 0, 0.071), rgba(0, 0, 0, 0.737)), url(../img/puma.jpg);
+}
+
+.slider__card:nth-child(9){
+    background-image: radial-gradient(rgba(0, 0, 0, 0.071), rgba(0, 0, 0, 0.737)), url(../img/rey.gallinaso.jpg);
+}
+
+
+
+.slider__card:hover{
+    transform: translateY(-10px);
+}
+
+.slider__card__tt{
+    position: absolute;
+    bottom: -40px;
+    color: white;
+    padding: 20px 20px 60px 20px;
+    width: 100%;
+    transition: all .3s;
+}
+
+.slider__card:hover .slider__card__tt{
+    background-color: var(--green);
+    bottom: -0px;
+}
+
+.slider__card__tt a{
+    position: absolute;
+    bottom: 20px;
+    opacity: 1;
+    text-transform: uppercase;
+    color: #333;
+}
+
+@media screen and (max-width: 600px){
+    .slider__card{
+        height: 450px;
+    }
+}

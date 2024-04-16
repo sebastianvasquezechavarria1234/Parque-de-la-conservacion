@@ -1,0 +1,128 @@
+
+:root{
+    --green: #009776;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.sec__hero__card{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+    z-index: 10;
+}
+
+.sec__hero__card img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    filter: brightness(70%);
+    object-fit: cover;
+    z-index: -1;
+}
+
+.sec__hero__card__max__width{
+    width: 1480px;
+    margin: 100px auto 0 auto;
+    padding: 0px 20px;
+}
+
+.sec__hero__card h1{
+    font-size: 5rem;
+    line-height: 65px;
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+.sec__hero__card p{
+    margin-bottom: 60px;
+    width: 600px;
+}
+
+.sec__hero__card a{
+    opacity: 1;
+    padding: 15px 28px;
+    background-color: var(--green);
+    border-radius: 30px;
+    text-transform: uppercase;
+}
+
+
+.sec__hero__card__bottom{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+    width: 100%;
+    margin-top: 80px;
+}
+
+.sec__hero__card__bottom a{
+    font-size: 1.3rem;
+    width: 250px;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.sec__hero__card__bottom a:nth-child(1),
+.sec__hero__card__bottom a:nth-child(2),
+.sec__hero__card__bottom a:nth-child(3),
+.sec__hero__card__bottom a:nth-child(4){
+    text-align: center;
+    text-transform: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 0px 0px;
+}
+
+.sec__hero__card__bottom a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    bottom: 120%;
+    left: 0;
+    transition: all .4s;
+}
+
+.sec__hero__card__bottom a:hover::before{
+    transform: scaleX(0);
+}
+
+.sec__hero__card__bottom a::after{
+    position: absolute;
+    content: "ver mas";
+    text-transform: uppercase;
+    top: 100%;
+    left: 50%;
+    text-decoration: underline;
+    transform: translateX(-50%);
+    transition: all .3s;
+}
+
+@media screen and (max-width: 1480px){
+    .sec__hero__card__max__width{
+        max-width: 1480px;
+    }
+    
+}
+
+@media screen and (max-height: 750px){
+    .sec__hero__card__max__width{
+        margin: 250px auto 0 auto;
+    }
+
+}

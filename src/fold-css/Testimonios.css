@@ -1,0 +1,17 @@
+
+
+.cardTestimonio{
+    display: block;
+    background-color: yellow;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.cardTestimonio img{
+    width: 20px;
+}
+
+p{
+    color: red;
+    width: 200px;
+}

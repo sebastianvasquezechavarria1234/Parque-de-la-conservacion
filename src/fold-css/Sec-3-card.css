@@ -1,0 +1,68 @@
+
+
+.sec__3__card{
+    cursor: pointer;
+    width: 100%;
+    background-color: var(--gray);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: all .3s;
+}
+
+.sec__3__card:hover{
+    background-color: var(--green);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.107);
+}
+
+.sec__3__card picture{
+    height: 200px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(../img/card-3-img-1.jpg);
+    background-position: center;
+    background-size: cover;
+    transition: all .3s;
+}
+
+.sec__3__card:hover picture{
+   height: 270px;
+   width: 40%;
+}
+
+.sec__3__card:nth-child(3) picture{
+    background-image: url(../img/card-3-img-2.jpg);
+}
+
+.sec__3__card:nth-child(4) picture{
+    background-image: url(../img/card-3-img-3.jpg);
+}
+
+.sec__3__card:nth-child(5) picture{
+    background-image: url(../img/card-3-img-4.jpg);
+}
+
+.sec__3__card:nth-child(6) picture{
+    background-image: url(../img/card-3-img-5.jpg);
+}
+
+.sec__3__card h3{
+    padding: 20px;
+    width: 80%;
+    transition: all .3s;
+}
+
+.sec__3__card:hover h3{
+    font-size: 2.6rem;
+}
+
+@media screen and (max-width: 600px){
+    .sec__3__card picture{
+        width: 60%;
+        height: 190px;
+    }
+    
+}
+
